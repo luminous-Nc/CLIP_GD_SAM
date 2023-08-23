@@ -1,0 +1,8 @@
+.idea
+venv
+dataset
+build
+sam_vit_h_4b8939.pth
+__pycache__
+GroundingDINO
+coca_result.zip
