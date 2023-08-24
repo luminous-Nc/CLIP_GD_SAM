@@ -42,8 +42,8 @@ if __name__ == "__main__":
                  'motorcycle', 'bicycle', 'caravan', 'trailer', 'building', 'wall', 'fence', 'guard rail', 'bridge',
                  'tunnel', 'pole', 'pole group', 'traffic sign', 'traffic light', 'tree', 'terrain', 'sky']
 
-    data_set_path = "dataset/cityscapes/city"
-    output_path = "dataset/cityscapes/city_result"
+    data_set_path = "dataset/cityscapes-val/city"
+    output_path = "dataset/cityscapes-val/city_result"
 
     clip_model, clip_preprocess, device = get_clip_model()
     mask_predictor = get_mask_predictor()

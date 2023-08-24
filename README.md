@@ -1,13 +1,12 @@
----
-title: Food Detection Demo
-emoji: 💻
-colorFrom: blue
-colorTo: pink
-sdk: gradio
-sdk_version: 3.39.0
-python_version: 3.9.0
-app_file: app.py
-pinned: false
----
+## Steps for clip
+1. pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121
+2. pip install packaging==21.3 
+3. pip install git+https://github.com/openai/CLIP.git
+4. pip install -r requirements.txt    
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+## Steps for GroundingDINO
+1. Copy all GroundingDINO. Look at build to check the 
+
+## Steps for SAM
+1. pip install git+https://github.com/facebookresearch/segment-anything.git
+2. pip install opencv-python pycocotools matplotlib onnxruntime onnx

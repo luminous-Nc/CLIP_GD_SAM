@@ -24,6 +24,6 @@ def prepare_categories_and_create_dir(output_path):
 
 
 if __name__ == "__main__":
-    dataset_path = "dataset/cityscapes/city"
-    output_path = "dataset/cityscapes/city_result"
+    dataset_path = "dataset/cityscapes-val/city"
+    output_path = "dataset/cityscapes-val/city_result"
     prepare_categories_and_create_dir(output_path)

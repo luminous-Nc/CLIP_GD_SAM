@@ -1,3 +1,3 @@
-while [ 1 ]; do
+while true; do
   python app_city.py
 done
