@@ -5,7 +5,7 @@
 4. pip install -r requirements.txt    
 
 ## Steps for GroundingDINO
-1. Copy all GroundingDINO. Look at build to check the 
+1. Copy all GroundingDINO. Look at build to check the running library
 
 ## Steps for SAM
 1. pip install git+https://github.com/facebookresearch/segment-anything.git

@@ -84,7 +84,7 @@ def get_bb_from_grounding_dino(image_PIL, describe):
     text_threshold = 0.25
 
     _, image_tensor = image_transform_grounding(init_image)
-    image_pil: Image = image_transform_grounding_for_vis(init_image)
+    # image_pil: Image = image_transform_grounding_for_vis(init_image)
 
     boxes, logits, phrases = predict(model, image_tensor, grounding_caption, box_threshold, text_threshold,
                                      device='cuda')

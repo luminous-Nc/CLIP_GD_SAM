@@ -1,0 +1,29 @@
+Mean mIOU: 0.4446954779968017 (Count those categories CLIP don't recognize)
+Mean mIOU: 0.9235983004548959 (Skip those categories CLIP don't recognize)
+Category: bicycle         Average IoU: 0.9843
+Category: bridge          Average IoU: 0 CLIP dont recognize this category
+Category: building        Average IoU: 0.9054
+Category: bus             Average IoU: 0.9844
+Category: car             Average IoU: 0.9600
+Category: caravan         Average IoU: 0.9888
+Category: fence           Average IoU: 0 CLIP dont recognize this category
+Category: guard rail      Average IoU: 0 CLIP dont recognize this category
+Category: motorcycle      Average IoU: 0.9941
+Category: on rails        Average IoU: 0.9890
+Category: parking lot     Average IoU: 0.6108
+Category: person          Average IoU: 0 CLIP dont recognize this category
+Category: pole            Average IoU: 0 CLIP dont recognize this category
+Category: pole group      Average IoU: 0 CLIP dont recognize this category
+Category: rail track      Average IoU: 0 CLIP dont recognize this category
+Category: rider           Average IoU: 0 CLIP dont recognize this category
+Category: road            Average IoU: 0.8738
+Category: sidewalk        Average IoU: 0.7464
+Category: sky             Average IoU: 0 CLIP dont recognize this category
+Category: terrain         Average IoU: 0 CLIP dont recognize this category
+Category: traffic light   Average IoU: 0.9965
+Category: traffic sign    Average IoU: 0.9952
+Category: trailer         Average IoU: 0 CLIP dont recognize this category
+Category: tree            Average IoU: 0 CLIP dont recognize this category
+Category: truck           Average IoU: 0.9780
+Category: tunnel          Average IoU: 0 CLIP dont recognize this category
+Category: wall            Average IoU: 0 CLIP dont recognize this category

@@ -1,0 +1,21 @@
+Mean mIOU: 0.9096197999392016
+Category: aeroplane       Average IoU: 0.9387
+Category: bicycle         Average IoU: 0.8850
+Category: bird            Average IoU: 0.9699
+Category: boat            Average IoU: 0.9439
+Category: bottle          Average IoU: 0.9662
+Category: bus             Average IoU: 0.9006
+Category: car             Average IoU: 0.9320
+Category: cat             Average IoU: 0.9085
+Category: chair           Average IoU: 0.8917
+Category: cow             Average IoU: 0.9091
+Category: dining table    Average IoU: 0.8650
+Category: dog             Average IoU: 0.9138
+Category: horse           Average IoU: 0.9420
+Category: motorbike       Average IoU: 0.9267
+Category: person          Average IoU: 0.8204
+Category: potted plant    Average IoU: 0.8407
+Category: sheep           Average IoU: 0.9125
+Category: sofa            Average IoU: 0.8551
+Category: train           Average IoU: 0.9213
+Category: TV or monitor   Average IoU: 0.9492

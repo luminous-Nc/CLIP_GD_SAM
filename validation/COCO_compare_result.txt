@@ -1,0 +1,82 @@
+Mean mIOU: 0.507031111095366 Skip CLIP can't regonize categories
+Mean mIOU: 0.5006932222066738 Count CLIP can't regonize categories
+Category: airplane        Average IoU: 0.6478
+Category: apple           Average IoU: 0.2941
+Category: backpack        Average IoU: 0.0000
+Category: banana          Average IoU: 0.4586
+Category: baseball bat    Average IoU: 0.4693
+Category: baseball glove  Average IoU: 0.5549
+Category: bear            Average IoU: 0.6507
+Category: bed             Average IoU: 0.5096
+Category: bench           Average IoU: 0.5292
+Category: bicycle         Average IoU: 0.5385
+Category: bird            Average IoU: 0.7072
+Category: boat            Average IoU: 0.5216
+Category: book            Average IoU: 0.7073
+Category: bottle          Average IoU: 0.7595
+Category: bowl            Average IoU: 0.2859
+Category: broccoli        Average IoU: 0.3353
+Category: bus             Average IoU: 0.7774
+Category: cake            Average IoU: 0.6591
+Category: car             Average IoU: 0.4360
+Category: carrot          Average IoU: 0.3512
+Category: cat             Average IoU: 0.8353
+Category: cell phone      Average IoU: 0.4671
+Category: chair           Average IoU: 0.5075
+Category: clock           Average IoU: 0.7100
+Category: couch           Average IoU: 0.5786
+Category: cow             Average IoU: 0.4609
+Category: cup             Average IoU: 0.6674
+Category: dining table    Average IoU: 0.2946
+Category: dog             Average IoU: 0.7539
+Category: donut           Average IoU: 0.3516
+Category: elephant        Average IoU: 0.6349
+Category: fire hydrant    Average IoU: 0.7041
+Category: fork            Average IoU: 0.1804
+Category: frisbee         Average IoU: 0.5074
+Category: giraffe         Average IoU: 0.5198
+Category: hair drier      Average IoU: 0.1184
+Category: handbag         Average IoU: 0.1031
+Category: horse           Average IoU: 0.5960
+Category: hot dog         Average IoU: 0.3551
+Category: keyboard        Average IoU: 0.6968
+Category: kite            Average IoU: 0.3319
+Category: knife           Average IoU: 0 CLIP dont recognize this category
+Category: laptop          Average IoU: 0.7101
+Category: microwave       Average IoU: 0.6294
+Category: motorcycle      Average IoU: 0.6124
+Category: mouse           Average IoU: 0.3628
+Category: orange          Average IoU: 0.3233
+Category: oven            Average IoU: 0.4029
+Category: parking meter   Average IoU: 0.5318
+Category: person          Average IoU: 0.5622
+Category: pizza           Average IoU: 0.6922
+Category: potted plant    Average IoU: 0.1647
+Category: refrigerator    Average IoU: 0.5333
+Category: remote          Average IoU: 0.3162
+Category: sandwich        Average IoU: 0.5060
+Category: scissors        Average IoU: 0.4346
+Category: sheep           Average IoU: 0.4288
+Category: sink            Average IoU: 0.6846
+Category: skateboard      Average IoU: 0.5038
+Category: skis            Average IoU: 0.3256
+Category: snowboard       Average IoU: 0.2046
+Category: spoon           Average IoU: 0.2062
+Category: sports ball     Average IoU: 0.5585
+Category: stop sign       Average IoU: 0.4685
+Category: suitcase        Average IoU: 0.5950
+Category: surfboard       Average IoU: 0.5296
+Category: teddy bear      Average IoU: 0.5881
+Category: tennis racket   Average IoU: 0.6069
+Category: tie             Average IoU: 0.4339
+Category: toaster         Average IoU: 0.5399
+Category: toilet          Average IoU: 0.6819
+Category: toothbrush      Average IoU: 0.3364
+Category: traffic light   Average IoU: 0.3326
+Category: train           Average IoU: 0.7252
+Category: truck           Average IoU: 0.6479
+Category: tv              Average IoU: 0.8050
+Category: umbrella        Average IoU: 0.7244
+Category: vase            Average IoU: 0.7222
+Category: wine glass      Average IoU: 0.4693
+Category: zebra           Average IoU: 0.5866

@@ -1,0 +1,81 @@
+COCA Mean mIOU: 0.5340132018187432
+Category: Accordion       Average IoU: 0.8953
+Category: alarm clock     Average IoU: 0.4747
+Category: avocado         Average IoU: 0.5273
+Category: backpack        Average IoU: 0.5903
+Category: baseball        Average IoU: 0.5890
+Category: beer bottle     Average IoU: 0.6819
+Category: belt            Average IoU: 0.2613
+Category: binoculars      Average IoU: 0.5453
+Category: boots           Average IoU: 0.3243
+Category: butterfly       Average IoU: 0.8377
+Category: calculator      Average IoU: 0.7551
+Category: camel           Average IoU: 0.6616
+Category: camera          Average IoU: 0.5013
+Category: candle          Average IoU: 0.5078
+Category: chopsticks      Average IoU: 0.5648
+Category: clover          Average IoU: 0.6737
+Category: dice            Average IoU: 0.1431
+Category: dolphin         Average IoU: 0.7557
+Category: doughnut        Average IoU: 0.6683
+Category: dumbbell        Average IoU: 0.4004
+Category: eggplant        Average IoU: 0.4769
+Category: faucet          Average IoU: 0.5886
+Category: fishing rod     Average IoU: 0.3276
+Category: frisbee         Average IoU: 0.6743
+Category: gift box        Average IoU: 0.5952
+Category: glasses         Average IoU: 0.3281
+Category: globe           Average IoU: 0.5706
+Category: glove           Average IoU: 0.4754
+Category: guitar          Average IoU: 0.7037
+Category: hammer          Average IoU: 0.4164
+Category: hammock         Average IoU: 0.5465
+Category: handbag         Average IoU: 0.6884
+Category: harp            Average IoU: 0.5521
+Category: hat             Average IoU: 0.3118
+Category: headphone       Average IoU: 0.6165
+Category: helicopter      Average IoU: 0.6013
+Category: high heels      Average IoU: 0.3700
+Category: hourglass       Average IoU: 0.0896
+Category: ice cream       Average IoU: 0.8490
+Category: key             Average IoU: 0.2980
+Category: lollipop        Average IoU: 0.4456
+Category: macaroon        Average IoU: 0.5248
+Category: microphone      Average IoU: 0.5377
+Category: minions         Average IoU: 0.7785
+Category: moon            Average IoU: 0.4645
+Category: persimmon       Average IoU: 0.3698
+Category: pigeon          Average IoU: 0.5893
+Category: pillow          Average IoU: 0.2768
+Category: pine cone       Average IoU: 0.2919
+Category: pineapple       Average IoU: 0.5300
+Category: pocket watch    Average IoU: 0.5792
+Category: poker           Average IoU: 0.4348
+Category: potato          Average IoU: 0.4504
+Category: pumpkin         Average IoU: 0.5712
+Category: rabbit          Average IoU: 0.7924
+Category: rocking horse   Average IoU: 0.4453
+Category: roller-skating  Average IoU: 0.5227
+Category: rolling pin     Average IoU: 0.7164
+Category: soap bubble     Average IoU: 0.6889
+Category: squirrel        Average IoU: 0.7706
+Category: stethoscope     Average IoU: 0.5916
+Category: sticky note     Average IoU: 0.6795
+Category: stool           Average IoU: 0.4335
+Category: strawberry      Average IoU: 0.4089
+Category: sunflower       Average IoU: 0.4065
+Category: tablet          Average IoU: 0.8145
+Category: teddy bear      Average IoU: 0.7283
+Category: thermometer     Average IoU: 0.1031
+Category: tomato          Average IoU: 0.2759
+Category: towel           Average IoU: 0.3659
+Category: toy car         Average IoU: 0.7382
+Category: typewriter      Average IoU: 0.9163
+Category: UAV             Average IoU: 0.3822
+Category: violin          Average IoU: 0.6120
+Category: waffles         Average IoU: 0.5876
+Category: watering can    Average IoU: 0.5622
+Category: watermelon      Average IoU: 0.6105
+Category: wheelchair      Average IoU: 0.6081
+Category: whisk           Average IoU: 0.2932
+Category: Yellow duck     Average IoU: 0.3838
