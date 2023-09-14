@@ -47,8 +47,8 @@ if __name__ == "__main__":
                  'thermometer', 'tomato', 'towel', 'toy car', 'typewriter', 'UAV', 'violin', 'waffles', 'watering can',
                  'watermelon', 'wheelchair', 'whisk', 'Yellow duck']
 
-    data_set_path = "../dataset/validation/coca/coca_val"
-    output_path = "../dataset/validation/coca/coca_result"
+    data_set_path = "dataset/validation/coca/coca_val"
+    output_path = "dataset/validation/coca/coca_result"
 
     clip_model, clip_preprocess, device, text_features = get_clip_model(word_list)
     mask_predictor = get_mask_predictor()

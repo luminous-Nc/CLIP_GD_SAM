@@ -50,8 +50,8 @@ if __name__ == "__main__":
 
     # current_index = 2
     # data_set_path = "coca_images/" + word_list[current_index]
-    data_set_path = "../dataset/fashionpedia"
-    output_path = "../dataset/fashionpedia/results"
+    data_set_path = "dataset/fashionpedia"
+    output_path = "dataset/fashionpedia/results"
 
     # word_list = prepare_dataset_and_create_dir(data_set_path, output_path)
     # print('word_list', word_list)

@@ -21,16 +21,19 @@ def show_mask(mask, ax, random_color=False):
     mask_image = mask.reshape(h, w, 1) * color.reshape(1, 1, -1)
     ax.imshow(mask_image)
 
-def get_mask_from_sam(predictor, image_PIL, bounding_box):
+def get_mask_from_sam(predictor, image_PIL, bounding_boxs):
     image = cv2.cvtColor(np.array(image_PIL), cv2.COLOR_RGB2BGR)
     predictor.set_image(image)
-    input_box = np.array(bounding_box['bb_xyxy'])
-    masks, _, _ = predictor.predict(
-        point_coords=None,
-        point_labels=None,
-        box=input_box[None, :],
-        multimask_output=False,
-    )
+    mask_list = []
+    for bounding_box in bounding_boxs:
+        input_box = np.array(bounding_box['bb_xyxy'])
+        masks, _, _ = predictor.predict(
+            point_coords=None,
+            point_labels=None,
+            box=input_box[None, :],
+            multimask_output=False,
+        )
+        mask_list.append(masks[0])
 
-    return masks[0]
+    return mask_list
 

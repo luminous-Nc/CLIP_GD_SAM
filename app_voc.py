@@ -37,24 +37,12 @@ def process_one_image(image_path, clip_model, clip_preprocess, device, word_list
 
 if __name__ == "__main__":
 
-    word_list = ["person", "bicycle", "car", "motorcycle", "airplane",
-                 "bus", "train", "truck", "boat", "traffic light", "fire hydrant",
-                 "stop sign", "parking meter", "bench", "bird", "cat", "dog",
-                 "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe",
-                 "backpack", "umbrella", "handbag", "tie", "suitcase", "frisbee",
-                 "skis", "snowboard", "sports ball", "kite", "baseball bat",
-                 "baseball glove", "skateboard", "surfboard", "tennis racket",
-                 "bottle", "wine glass", "cup", "fork", "knife", "spoon", "bowl",
-                 "banana", "apple", "sandwich", "orange", "broccoli", "carrot",
-                 "hot dog", "pizza", "donut", "cake", "chair", "couch",
-                 "potted plant", "bed", "dining table", "toilet", "tv", "laptop",
-                 "mouse", "remote", "keyboard", "cell phone", "microwave", "oven",
-                 "toaster", "sink", "refrigerator", "book", "clock", "vase",
-                 "scissors", "teddy bear", "hair drier", "toothbrush"
-                 ]
+    word_list = ["person", "bird", "cat", "cow", "dog", "horse", "sheep", "aeroplane", "bicycle", "boat", "bus",
+                        "car", "motorbike", "train", "bottle", "chair", "dining table", "potted plant", "sofa",
+                        "TV/monitor"]
 
-    data_set_path = "../dataset/validation/coco_2017/coco_val"
-    output_path = "../dataset/validation/coco_2017/coco_result"
+    data_set_path = "dataset/validation/pascal_voc2012/voc2012_val"
+    output_path = "dataset/validation/pascal_voc2012/voc2012_result"
 
     clip_model, clip_preprocess, device, text_features = get_clip_model(word_list)
     mask_predictor = get_mask_predictor()
@@ -65,7 +53,7 @@ if __name__ == "__main__":
             if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
                 all_image_paths.append(os.path.join(root, file))
 
-    with tqdm(total=len(all_image_paths), desc="Generating CoCo 2017 masks") as pbar:
+    with tqdm(total=len(all_image_paths), desc="Generating Pascal masks") as pbar:
         for image_path in all_image_paths:
             image_file = os.path.basename(image_path)
             start_time = time.time()

@@ -13,10 +13,17 @@ def prepare_dataset_and_create_dir(dataset_path, output_path):
 
 
 def prepare_categories_and_create_dir(output_path):
-    category_folders = ['road', 'sidewalk', 'parking lot', 'rail track', 'person', 'rider', 'car', 'truck', 'bus',
-                        'on rails', 'motorcycle', 'bicycle', 'caravan', 'trailer', 'building', 'wall', 'fence',
-                        'guard rail', 'bridge', 'tunnel', 'pole', 'pole group', 'traffic sign', 'traffic light', 'tree',
-                        'terrain', 'sky']
+    # category_folders = ["bacon", "baked beans", "beans and rice", "beef", "beef lamb veal", "beverage", "biscuits",
+    #                      "breads", "breadsticks", "breakfast bars", "butter", "cakes", "candy", "cheese","chili",
+    #                     "chips","condiments and sauces","cooked cereal","cookies","cornbread","cottage cheese","crackers","cream cheese","creamers",
+    #                     "creole","dips","dumpling","egg rolls","eggs","fast food salads","fish and seafood","fish patty","french fries",
+    #                     "french toast","fruit","vegetables","gelatin","gnocchi","gravy","ice cream","lasagna","luncheon meats",""]
+
+
+    # category_folders = ['road', 'sidewalk', 'parking lot', 'rail track', 'person', 'rider', 'car', 'truck', 'bus',
+    #                     'on rails', 'motorcycle', 'bicycle', 'caravan', 'trailer', 'building', 'wall', 'fence',
+    #                     'guard rail', 'bridge', 'tunnel', 'pole', 'pole group', 'traffic sign', 'traffic light', 'tree',
+    #                     'terrain', 'sky']
 
     # category_folders = ['Accordion', 'alarm clock', 'avocado', 'backpack', 'baseball', 'beer bottle', 'belt', 'binoculars',
     #              'boots', 'butterfly', 'calculator', 'camel', 'camera', 'candle', 'chopsticks', 'clover', 'dice',
@@ -44,10 +51,20 @@ def prepare_categories_and_create_dir(output_path):
     #                     "toaster", "sink", "refrigerator", "book", "clock", "vase",
     #                     "scissors", "teddy bear", "hair drier", "toothbrush"
     #                     ]
+    #
+    # category_folders = ["person", "bird", "cat", "cow", "dog", "horse", "sheep", "aeroplane", "bicycle", "boat", "bus",
+    #                     "car", "motorbike", "train", "bottle", "chair", "dining table", "potted plant", "sofa",
+    #                     "TV or monitor/monitor"]
+    category_folders = [ "bacon", "baked beans", "beans and rice","beef lamb veal", "beverage", "biscuits",
+  "breads", "breadsticks", "breakfast bars", "butter", "cakes", "candy", "cheese", "cheese sandwich","chili",
+  "chips", "condiments and sauces", "cooked cereal", "cookies", "cornbread", "cottage cheese",
+  "crackers", "cream cheese", "creamers", "creole", "dips", "dumpling", "egg rolls", "eggs", "fast food salads", "fish and seafood",
+  "fish patty", "french fries", "french toast", "fruit", "fruit and vegetables", "gelatin", "gnocchi", "gravy", "ice cream", "lasagna",
+  "luncheon meats", "mayonnaise", "mexican dishes", "olives", "pie", "pretzel", "rolls bagels buns",
+  "sandwich", "shepherd pie", "sour cream", "spaghetti sauce", "sugar", "sweet breads","sweet breads pastries muffins", "syrups", "syrups lcings",
+  "tortillas tacos shells", "trail and snack mix", "various salads", "vegetables", "waffle", "yogurt"]
 
-    category_folders = ["person", "bird", "cat", "cow", "dog", "horse", "sheep", "aeroplane", "bicycle", "boat", "bus",
-                        "car", "motorbike", "train", "bottle", "chair", "dining table", "potted plant", "sofa",
-                        "TV or monitor/monitor"]
+
 
     for category_folder in category_folders:
         result_category_path = os.path.join(output_path, category_folder)
@@ -55,6 +72,6 @@ def prepare_categories_and_create_dir(output_path):
 
 
 if __name__ == "__main__":
-    dataset_path = "dataset/validation/pascal_voc2012/voc2012_val"
-    output_path = "dataset/validation/pascal_voc2012/voc2012_result"
+    data_set_path = "./dataset/IBL_food/IBL Datasets"
+    output_path = "./dataset/IBL_food/IBL results"
     prepare_categories_and_create_dir(output_path)

@@ -37,12 +37,12 @@ def process_one_image(image_path, clip_model, clip_preprocess, device, word_list
 
 if __name__ == "__main__":
 
-    word_list = ["person", "bird", "cat", "cow", "dog", "horse", "sheep", "aeroplane", "bicycle", "boat", "bus",
-                        "car", "motorbike", "train", "bottle", "chair", "dining table", "potted plant", "sofa",
-                        "TV/monitor"]
+    word_list = ['road', 'sidewalk', 'parking lot', 'rail track', 'person', 'rider', 'car', 'truck', 'bus', 'on rails',
+                 'motorcycle', 'bicycle', 'caravan', 'trailer', 'building', 'wall', 'fence', 'guard rail', 'bridge',
+                 'tunnel', 'pole', 'pole group', 'traffic sign', 'traffic light', 'tree', 'terrain', 'sky']
 
-    data_set_path = "../dataset/validation/pascal_voc2012/voc2012_val"
-    output_path = "../dataset/validation/pascal_voc2012/voc2012_result"
+    data_set_path = "dataset/validation/cityscapes/cityscapes_val"
+    output_path = "dataset/validation/cityscapes/cityscapes_result"
 
     clip_model, clip_preprocess, device, text_features = get_clip_model(word_list)
     mask_predictor = get_mask_predictor()
@@ -53,7 +53,7 @@ if __name__ == "__main__":
             if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
                 all_image_paths.append(os.path.join(root, file))
 
-    with tqdm(total=len(all_image_paths), desc="Generating Pascal masks") as pbar:
+    with tqdm(total=len(all_image_paths), desc="Generating cityscapes masks") as pbar:
         for image_path in all_image_paths:
             image_file = os.path.basename(image_path)
             start_time = time.time()

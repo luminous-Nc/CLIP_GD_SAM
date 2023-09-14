@@ -88,14 +88,20 @@ def get_bb_from_grounding_dino(image_PIL, describe):
 
     boxes, logits, phrases = predict(model, image_tensor, grounding_caption, box_threshold, text_threshold,
                                      device='cuda')
+    boxes_result = []
+    annotated_frame = init_image
     if len(boxes) > 0:
-        # annotated_frame = annotate(image_source=np.asarray(image_pil), boxes=boxes, logits=logits, phrases=phrases)
+        for index in range(boxes.shape[0]):
+            bb_xyxy = cxcywh_to_xyxy(image_PIL, boxes.numpy()[index])
+            bb_abs_cxywh = relative_to_absolute(image_PIL, boxes.numpy()[index])
+            boxes_result.append({"bb_xyxy": bb_xyxy, "bb_abs_cxywh": bb_abs_cxywh})
+        annotated_frame = annotate(image_source=np.asarray(init_image), boxes=boxes, logits=logits, phrases=phrases)
+        return boxes_result , annotated_frame
+
 
         # cv2.imwrite('a.jpg', annotated_frame)
         # print(boxes, logits, phrases)
-        bb_xyxy = cxcywh_to_xyxy(image_PIL, boxes.numpy()[0])
-        bb_abs_cxywh = relative_to_absolute(image_PIL, boxes.numpy()[0])
-        return {"bb_xyxy": bb_xyxy, "bb_abs_cxywh": bb_abs_cxywh}
+
     else:
-        return False
+        return boxes_result, annotated_frame
 
