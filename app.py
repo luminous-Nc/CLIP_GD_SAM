@@ -13,7 +13,7 @@ import os
 
 
 def process_one_image(image_path, clip_model, clip_preprocess, device, word_list, text_features, mask_predictor,
-                      output_path, image_file_name):
+                      output_path, image_file_name, remove_file, binary_mask):
     # print(f"process {image_path}")
     image_PIL = Image.open(image_path)
 
@@ -30,9 +30,10 @@ def process_one_image(image_path, clip_model, clip_preprocess, device, word_list
     mask_list = get_mask_from_sam(mask_predictor, image_PIL, boundingbox_list)
     # print("mask done.")
 
-    save_data(word, boundingbox_list, mask_list, output_path, image_file_name, image_path, annotated_bb_image)
+    save_data(word, boundingbox_list, mask_list, output_path, image_file_name, image_path, annotated_bb_image, binary_mask)
 
-    os.remove(image_path)
+    if remove_file:
+        os.remove(image_path)
 
 
 def USSPipeline(args):
@@ -62,7 +63,7 @@ def USSPipeline(args):
                 start_time = time.time()
                 process_one_image(image_path, clip_model, clip_preprocess, device, word_list, text_features,
                                   mask_predictor,
-                                  output_path, image_file_name)
+                                  output_path, image_file_name, args.remove, binary_mask)
                 end_time = time.time()
                 elapsed_time = end_time - start_time
                 pbar.set_postfix({"Time": f"{elapsed_time:.2f} s"})

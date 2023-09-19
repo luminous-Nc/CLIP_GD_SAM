@@ -5,7 +5,7 @@ import clip
 def get_clip_model(word_list):
     # device = "cpu"
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    print(clip.available_models())
+    # print(clip.available_models())
     model, preprocess = clip.load("ViT-B/32", device=device)
 
     print("clip device: ", device)

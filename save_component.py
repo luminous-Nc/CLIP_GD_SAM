@@ -16,7 +16,7 @@ colors = [
     [255, 255, 255] # White
 ]
 
-def save_data(word, boundingbox_list, mask_list, output_path, image_file_name, image_path ,annotated_image):
+def save_data(word, boundingbox_list, mask_list, output_path, image_file_name, image_path ,annotated_image, binary_mask):
     # print(f"word:{word}")
     # print(f"boundingbox:{boundingbox}")
     # print(f"output_path:{output_path}")

@@ -5,7 +5,9 @@
 4. pip install -r requirements.txt    
 
 ## Steps for GroundingDINO
-1. Copy all GroundingDINO. Look at build to check the running library
+1. git clone https://github.com/IDEA-Research/GroundingDINO.git
+2. cd GroundingDINO/
+3. pip install -e .
 
 ## Steps for SAM
 1. pip install git+https://github.com/facebookresearch/segment-anything.git
