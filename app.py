@@ -5,9 +5,9 @@ from PIL import Image
 from tqdm import tqdm
 
 from prepare_component import prepare_categories_and_create_dir
-from clip_component import get_clip_model, get_word_from_clip, get_word_id
+from clip_component import get_clip_model, get_word_from_clip, get_word_id, resend_clip_to_check
 from grounding_component import get_bb_from_grounding_dino
-from sam_component import get_mask_predictor, get_mask_from_sam
+from sam_component import get_mask_predictor, get_mask_from_sam,get_mask_from_sam_with_boxes
 from save_component import save_data
 
 import os
@@ -15,7 +15,7 @@ import os
 
 def process_one_image(image_path, clip_model, clip_preprocess, device, word_list, text_features, mask_predictor,
                       output_path, output_pure_path, task_args):
-    # print(f"process {image_path}")
+    print(f"process {image_path}")
     image_PIL = Image.open(image_path)
 
     word = get_word_from_clip(image_PIL, clip_model, clip_preprocess, device, word_list, text_features)
@@ -29,8 +29,11 @@ def process_one_image(image_path, clip_model, clip_preprocess, device, word_list
         return
     print(f"bounding box number:{len(boundingbox_list)}")
 
-    mask_list = get_mask_from_sam(mask_predictor, image_PIL, boundingbox_list)
+    mask_list = get_mask_from_sam(mask_predictor, image_PIL, boundingbox_list, image_path)
+    # mask_list = get_mask_from_sam_with_boxes(mask_predictor, image_PIL, boundingbox_list,image_path)
     # print("mask done.")
+
+    boundingbox_list, mask_list = resend_clip_to_check(word,boundingbox_list,mask_list,image_PIL,clip_model, clip_preprocess, device, word_list, text_features)
 
     save_data(word_id, word, boundingbox_list, mask_list, output_path, output_pure_path, image_path,
               annotated_bb_image, task_args)

@@ -1,6 +1,6 @@
 task_mappings = {
     "test": {
-        "word_list": ['apple', "banana", "bread", "cereal", "chicken", "juice", "lemon", "milk", "orange", "salad"],
+        "word_list": ['apple', "banana", "bread", "cereal", "chicken", "juice", "lemon", "milk", "orange", "salad","breakfast bars","chips","cakes",],
         "data_set_path": "./dataset/food_simple/images",
         "output_path": "./dataset/food_simple/results",
         "output_pure_path": "./dataset/food_simple/pure_masks"

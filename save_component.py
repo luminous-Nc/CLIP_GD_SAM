@@ -30,6 +30,8 @@ def save_data(id, word, boundingbox_list, mask_list, output_path, output_pure_pa
 
     result_image = original_image.copy()
     for i, mask in enumerate(mask_list):
+        # mask = mask.cpu().numpy()
+        # mask = np.squeeze(mask)
         color = colors[i % len(colors)]
         color_mask = np.zeros_like(original_image)
         color_mask[:, :] = color  # B,G,R
@@ -57,7 +59,9 @@ def save_data(id, word, boundingbox_list, mask_list, output_path, output_pure_pa
     if task_args.pure_mask:
         pure_mask_image = np.zeros_like(original_image)
         for i, mask in enumerate(mask_list):
-            print(f"id:{id} of instance {i}")
+            # print(f"id:{id} of instance {i}")
+            # mask = mask.cpu().numpy()
+            # mask = np.squeeze(mask)
             color = [id, id, id]
             color_mask = np.zeros_like(original_image)
             color_mask[:, :] = color  # B,G,R
