@@ -1,0 +1,93 @@
+Category: almond          Average IoU: 69.6794%
+Category: apple           Average IoU: 96.7576%
+Category: apricot         Average IoU: 76.7470%
+Category: asparagus       Average IoU: 69.1799%
+Category: avocado         Average IoU: 88.0762%
+Category: bamboo shoots   Average IoU: 65.8687%
+Category: banana          Average IoU: 92.0047%
+Category: bean sprouts    Average IoU: 69.3166%
+Category: biscuit         Average IoU: 71.4753%
+Category: blueberry       Average IoU: 82.7769%
+Category: bread           Average IoU: 75.5541%
+Category: broccoli        Average IoU: 81.3554%
+Category: cabbage         Average IoU: 53.0228%
+Category: cake            Average IoU: 73.5093%
+Category: candy           Average IoU: 53.1656%
+Category: carrot          Average IoU: 89.1596%
+Category: cashew          Average IoU: 70.3663%
+Category: cauliflower     Average IoU: 75.0037%
+Category: cheese butter   Average IoU: 73.1619%
+Category: cherry          Average IoU: 99.1536%
+Category: chicken duck    Average IoU: 88.3910%
+Category: chocolate       Average IoU: 70.2605%
+Category: cilantro mint   Average IoU: 91.6646%
+Category: coffee          Average IoU: 83.3320%
+Category: corn            Average IoU: 98.4952%
+Category: crab            Average IoU: 81.9921%
+Category: cucumber        Average IoU: 75.8299%
+Category: dried cranberries Average IoU: 76.0679%
+Category: egg             Average IoU: 88.5826%
+Category: egg tart        Average IoU: 71.9404%
+Category: eggplant        Average IoU: 76.3303%
+Category: enoki mushroom  Average IoU: 73.3362%
+Category: fig             Average IoU: 77.2687%
+Category: fish            Average IoU: 87.3996%
+Category: French beans    Average IoU: 67.7384%
+Category: french fries    Average IoU: 82.5731%
+Category: fried meat      Average IoU: 70.5250%
+Category: garlic          Average IoU: 77.9864%
+Category: grape           Average IoU: 97.4579%
+Category: green beans     Average IoU: 79.5339%
+Category: hanamaki baozi  Average IoU: 68.6991%
+Category: ice cream       Average IoU: 96.3167%
+Category: juice           Average IoU: 91.4571%
+Category: king oyster mushroom Average IoU: 88.5307%
+Category: kiwi            Average IoU: 94.8816%
+Category: lamb            Average IoU: 78.3481%
+Category: lemon           Average IoU: 94.2684%
+Category: mango           Average IoU: 75.9183%
+Category: milk            Average IoU: 89.9499%
+Category: milkshake       Average IoU: 86.4413%
+Category: noodles         Average IoU: 40.7298%
+Category: okra            Average IoU: 71.2118%
+Category: olives          Average IoU: 69.9713%
+Category: onion           Average IoU: 94.7408%
+Category: orange          Average IoU: 84.3095%
+Category: other ingredients Average IoU: 59.1268%
+Category: oyster mushroom Average IoU: 72.1948%
+Category: pasta           Average IoU: 63.1377%
+Category: peach           Average IoU: 32.2064%
+Category: pear            Average IoU: 78.3234%
+Category: pie             Average IoU: 64.9395%
+Category: pineapple       Average IoU: 83.0621%
+Category: pizza           Average IoU: 64.6431%
+Category: popcorn         Average IoU: 91.5099%
+Category: pork            Average IoU: 76.5565%
+Category: potato          Average IoU: 77.2105%
+Category: pudding         Average IoU: 69.4058%
+Category: pumpkin         Average IoU: 90.8270%
+Category: raspberry       Average IoU: 78.2057%
+Category: red beans       Average IoU: 76.5627%
+Category: rice            Average IoU: 89.7205%
+Category: salad           Average IoU: 63.8402%
+Category: sausage         Average IoU: 84.8278%
+Category: seaweed         Average IoU: 58.7435%
+Category: shellfish       Average IoU: 70.7756%
+Category: shiitake        Average IoU: 62.7494%
+Category: shrimp          Average IoU: 75.0377%
+Category: snow peas       Average IoU: 65.1355%
+Category: soup            Average IoU: 79.0868%
+Category: soy             Average IoU: 88.8473%
+Category: spring onion    Average IoU: 83.6126%
+Category: steak           Average IoU: 82.8660%
+Category: strawberry      Average IoU: 85.0347%
+Category: tea             Average IoU: 74.2320%
+Category: tofu            Average IoU: 77.0528%
+Category: tomato          Average IoU: 91.2475%
+Category: walnut          Average IoU: 69.2343%
+Category: watermelon      Average IoU: 74.6579%
+Category: white button mushroom Average IoU: 64.7882%
+Category: white radish    Average IoU: 76.8797%
+Category: wine            Average IoU: 90.2735%
+Category: wonton dumplings Average IoU: 80.3038%
+Mean mIOU: 0.7755080404427188

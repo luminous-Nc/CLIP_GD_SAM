@@ -1,0 +1,105 @@
+Category: almond          Average Accuracy: 100.0000
+Category: apple           Average Accuracy: 100.0000
+Category: apricot         Average Accuracy: 100.0000
+Category: asparagus       Average Accuracy: 100.0000
+Category: avocado         Average Accuracy: 100.0000
+Category: background      Average Accuracy: 100.0000
+Category: bamboo shoots   Average Accuracy: 100.0000
+Category: banana          Average Accuracy: 100.0000
+Category: bean sprouts    Average Accuracy: 100.0000
+Category: biscuit         Average Accuracy: 94.1176
+Category: blueberry       Average Accuracy: 100.0000
+Category: bread           Average Accuracy: 100.0000
+Category: broccoli        Average Accuracy: 100.0000
+Category: cabbage         Average Accuracy: 100.0000
+Category: cake            Average Accuracy: 98.6667
+Category: candy           Average Accuracy: 100.0000
+Category: carrot          Average Accuracy: 100.0000
+Category: cashew          Average Accuracy: 100.0000
+Category: cauliflower     Average Accuracy: 100.0000
+Category: celery stick    Average Accuracy: 100.0000
+Category: cheese butter   Average Accuracy: 100.0000
+Category: cherry          Average Accuracy: 100.0000
+Category: chicken duck    Average Accuracy: 98.6486
+Category: chocolate       Average Accuracy: 100.0000
+Category: cilantro mint   Average Accuracy: 100.0000
+Category: coffee          Average Accuracy: 100.0000
+Category: corn            Average Accuracy: 100.0000
+Category: crab            Average Accuracy: 100.0000
+Category: cucumber        Average Accuracy: 100.0000
+Category: date            Average Accuracy: 100.0000
+Category: dried cranberries Average Accuracy: 100.0000
+Category: egg             Average Accuracy: 93.5484
+Category: egg tart        Average Accuracy: 100.0000
+Category: eggplant        Average Accuracy: 100.0000
+Category: enoki mushroom  Average Accuracy: 100.0000
+Category: fig             Average Accuracy: 100.0000
+Category: fish            Average Accuracy: 100.0000
+Category: French beans    Average Accuracy: 100.0000
+Category: french fries    Average Accuracy: 100.0000
+Category: fried meat      Average Accuracy: 100.0000
+Category: garlic          Average Accuracy: 100.0000
+Category: ginger          Average Accuracy: 100.0000
+Category: grape           Average Accuracy: 100.0000
+Category: green beans     Average Accuracy: 100.0000
+Category: hamburg         Average Accuracy: 100.0000
+Category: hanamaki baozi  Average Accuracy: 100.0000
+Category: ice cream       Average Accuracy: 100.0000
+Category: juice           Average Accuracy: 100.0000
+Category: kelp            Average Accuracy: 100.0000
+Category: king oyster mushroom Average Accuracy: 100.0000
+Category: kiwi            Average Accuracy: 100.0000
+Category: lamb            Average Accuracy: 100.0000
+Category: lemon           Average Accuracy: 100.0000
+Category: lettuce         Average Accuracy: 100.0000
+Category: mango           Average Accuracy: 100.0000
+Category: melon           Average Accuracy: 100.0000
+Category: milk            Average Accuracy: 100.0000
+Category: milkshake       Average Accuracy: 100.0000
+Category: noodles         Average Accuracy: 100.0000
+Category: okra            Average Accuracy: 100.0000
+Category: olives          Average Accuracy: 100.0000
+Category: onion           Average Accuracy: 100.0000
+Category: orange          Average Accuracy: 100.0000
+Category: other ingredients Average Accuracy: 100.0000
+Category: oyster mushroom Average Accuracy: 100.0000
+Category: pasta           Average Accuracy: 100.0000
+Category: peach           Average Accuracy: 100.0000
+Category: peanut          Average Accuracy: 100.0000
+Category: pear            Average Accuracy: 100.0000
+Category: pepper          Average Accuracy: 100.0000
+Category: pie             Average Accuracy: 100.0000
+Category: pineapple       Average Accuracy: 100.0000
+Category: pizza           Average Accuracy: 100.0000
+Category: popcorn         Average Accuracy: 66.6667
+Category: pork            Average Accuracy: 100.0000
+Category: potato          Average Accuracy: 100.0000
+Category: pudding         Average Accuracy: 100.0000
+Category: pumpkin         Average Accuracy: 100.0000
+Category: rape            Average Accuracy: 100.0000
+Category: raspberry       Average Accuracy: 100.0000
+Category: red beans       Average Accuracy: 93.7500
+Category: rice            Average Accuracy: 100.0000
+Category: salad           Average Accuracy: 100.0000
+Category: sauce           Average Accuracy: 100.0000
+Category: sausage         Average Accuracy: 100.0000
+Category: seaweed         Average Accuracy: 100.0000
+Category: shellfish       Average Accuracy: 100.0000
+Category: shiitake        Average Accuracy: 100.0000
+Category: shrimp          Average Accuracy: 100.0000
+Category: snow peas       Average Accuracy: 100.0000
+Category: soup            Average Accuracy: 100.0000
+Category: soy             Average Accuracy: 100.0000
+Category: spring onion    Average Accuracy: 100.0000
+Category: steak           Average Accuracy: 100.0000
+Category: strawberry      Average Accuracy: 100.0000
+Category: tea             Average Accuracy: 100.0000
+Category: tofu            Average Accuracy: 100.0000
+Category: tomato          Average Accuracy: 100.0000
+Category: walnut          Average Accuracy: 100.0000
+Category: watermelon      Average Accuracy: 100.0000
+Category: white button mushroom Average Accuracy: 100.0000
+Category: white radish    Average Accuracy: 100.0000
+Category: wine            Average Accuracy: 100.0000
+Category: wonton dumplings Average Accuracy: 100.0000
+Mean mAccuracy: 99.47498092439982
