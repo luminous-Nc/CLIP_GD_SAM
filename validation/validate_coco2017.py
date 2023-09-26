@@ -64,7 +64,7 @@ def calculate_iou(mask1, mask2):
 
 if __name__ == "__main__":
     result_folder = ".\\coco\\coco_result"
-    coco_json_path = '.\\coco\\coco_ground\\coco_ground.json'  # 替换为你的COCO标注数据JSON文件路径
+    coco_json_path = '.\\coco\\coco_ground\\coco_ground.json'
     with open(coco_json_path, 'r') as f:
         coco_data = json.load(f)
 

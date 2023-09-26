@@ -3,7 +3,7 @@ task_mappings = {
         "word_list": ['apple', "banana", "bread", "cereal", "chicken", "juice", "lemon", "milk", "orange", "salad"],
         "data_set_path": "./dataset/food_simple/images",
         "output_path": "./dataset/food_simple/results",
-        "output_binary_path": "./dataset/food_simple/binary_masks"
+        "output_pure_path": "./dataset/food_simple/pure_masks"
     },
     "city": {
         "word_list": ['road', 'sidewalk', 'parking lot', 'rail track', 'person', 'rider', 'car', 'truck', 'bus',
@@ -12,7 +12,7 @@ task_mappings = {
                       'terrain', 'sky'],
         "data_set_path": "./dataset/cityscapes/images",
         "output_path": "./dataset/cityscapes/results",
-        "output_binary_path": "./dataset/cityscapes/binary_masks"
+        "output_pure_path": "./dataset/cityscapes/pure_masks"
     },
     "IBL_food": {
         "word_list": ["bacon", "baked beans", "beans and rice", "beef lamb veal", "beverage", "biscuits",
@@ -30,14 +30,12 @@ task_mappings = {
                       "yogurt"],
         "data_set_path": "./dataset/IBL_food/images",
         "output_path": "./dataset/IBL_food/results",
-        "output_binary_path": "./dataset/IBL_food/binary_masks"
+        "output_pure_path": "./dataset/IBL_food/pure_masks"
     },
     "food": {
         "word_list": ["bacon", "baked beans", "beans and rice", "beef lamb veal", "beverage", "biscuits",
                       "breads", "breadsticks", "breakfast bars", "butter", "cakes", "candy", "cheese",
-                      "cheese sandwich",
-                      "chili",
-                      "chips", "condiments and sauces", "cooked cereal", "cookies", "cornbread", "cottage cheese",
+                      "cheese sandwich", "chili", "chips", "condiments and sauces", "cooked cereal", "cookies", "cornbread", "cottage cheese",
                       "crackers", "cream cheese", "creamers", "creole", "dips", "dumpling", "egg rolls", "eggs",
                       "fast food salads", "fish and seafood",
                       "fish patty", "french fries", "french toast", "fruit", "fruit and vegetables", "gelatin",
@@ -49,7 +47,7 @@ task_mappings = {
                       "yogurt"],
         "data_set_path": "./dataset/food/images",
         "output_path": "./dataset/food/results",
-        "output_binary_path": "./dataset/food/binary_masks"
+        "output_pure_path": "./dataset/food/pure_masks"
     },
 
     "coco": {
@@ -72,8 +70,8 @@ task_mappings = {
     },
     "coca": {
         "word_list": ['Accordion', 'alarm clock', 'avocado', 'backpack', 'baseball', 'beer bottle', 'belt',
-                      'binoculars',
-                      'boots', 'butterfly', 'calculator', 'camel', 'camera', 'candle', 'chopsticks', 'clover', 'dice',
+                      'binoculars', 'boots', 'butterfly', 'calculator', 'camel', 'camera', 'candle', 'chopsticks',
+                      'clover', 'dice',
                       'dolphin', 'doughnut', 'dumbbell', 'eggplant', 'faucet', 'fishing rod', 'frisbee', 'gift box',
                       'glasses', 'globe', 'glove', 'guitar', 'hammer', 'hammock', 'handbag', 'harp', 'hat', 'headphone',
                       'helicopter', 'high heels', 'hourglass', 'ice cream', 'key', 'lollipop', 'macaroon', 'microphone',
@@ -95,6 +93,19 @@ task_mappings = {
                       "TV/monitor"],
         "data_set_path": "./dataset/validation/pascal_voc2012/voc2012_val",
         "output_path": "./dataset/validation/pascal_voc2012/voc2012_result"
+    },
+    "fashionpedia": {
+        "word_list": ['shirt', 'blouse', 'top', 't-shirt', 'sweatshirt', 'sweater', 'cardigan', 'jacket', 'vest',
+                      'pants',
+                      'shorts', 'skirt', 'coat', 'dress', 'jumpsuit', 'cape', 'glasses', 'hat', 'headband',
+                      'head covering',
+                      'hair accessory', 'tie', 'glove', 'watch', 'belt', 'leg warmer', 'tights', 'stockings', 'sock',
+                      "shoe",
+                      'bag', 'wallet', "scarf", "umbrella", "hood", "collar", "lapel", "epaulette", "sleeve",
+                      'pocket', "neckline", "buckle", "zipper", "applique", "bead", "bow", "flower", "fringe", "ribbon",
+                      "rivet", "ruffle", "sequin", "tassel"],
+        "data_set_path": "./dataset/fashionpedia/images",
+        "output_path": "./dataset/fashionpedia/results"
     }
 
 }
