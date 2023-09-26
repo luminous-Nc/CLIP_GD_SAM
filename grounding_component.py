@@ -98,8 +98,6 @@ def get_bb_from_grounding_dino(image_PIL, describe):
         annotated_frame = annotate(image_source=np.asarray(init_image), boxes=boxes, logits=logits, phrases=phrases)
         return boxes_result , annotated_frame
 
-
-        # cv2.imwrite('a.jpg', annotated_frame)
         # print(boxes, logits, phrases)
 
     else:

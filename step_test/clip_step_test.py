@@ -2,7 +2,7 @@ from clip_component import get_clip_model, get_word_from_clip
 from PIL import Image
 
 if __name__ == "__main__":
-    word_list = ["bacon", "cauliflower","baked beans", "beans and rice", "beef lamb veal", "beverage", "biscuits",
+    word_list = ["bacon", "baked beans", "beans and rice", "beef lamb veal", "beverage", "biscuits",
                  "breads", "breadsticks", "breakfast bars", "butter", "cakes", "candy", "cheese", "cheese sandwich",
                  "chili","fruit","orange"
                  "chips", "condiments and sauces", "cooked cereal", "cookies", "cornbread", "cottage cheese",

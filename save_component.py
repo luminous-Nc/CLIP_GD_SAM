@@ -8,15 +8,17 @@ colors = [
     [255, 0, 0],  # Blue
     [128, 0, 128],  # Purple
     [0, 0, 0],  # Black
-    [0, 0, 255],    # Red
+    [0, 0, 255],  # Red
     [0, 165, 255],  # Orange
     [0, 255, 255],  # Yellow
-    [0, 128, 0],    # Green
+    [0, 128, 0],  # Green
     [255, 255, 0],  #
-    [255, 255, 255] # White
+    [255, 255, 255]  # White
 ]
 
-def save_data(word, boundingbox_list, mask_list, output_path, image_file_name, image_path ,annotated_image, binary_mask):
+
+def save_data(id, word, boundingbox_list, mask_list, output_path, image_path, annotated_image, task_args):
+    # print(f"id:{id}"
     # print(f"word:{word}")
     # print(f"boundingbox:{boundingbox}")
     # print(f"output_path:{output_path}")
@@ -24,7 +26,6 @@ def save_data(word, boundingbox_list, mask_list, output_path, image_file_name, i
 
     # original_image = cv2.imread(image_path)
     original_image = annotated_image
-
 
     result_image = original_image.copy()
     for i, mask in enumerate(mask_list):
@@ -36,12 +37,18 @@ def save_data(word, boundingbox_list, mask_list, output_path, image_file_name, i
 
     result_category_path = os.path.join(output_path, word)
     os.makedirs(result_category_path, exist_ok=True)
+    image_file_name = os.path.basename(image_path)
     result_image_path = os.path.join(result_category_path, image_file_name)
     cv2.imwrite(result_image_path, result_image)
 
-    # # print(boundingbox["bb_abs_cxywh"])
-    # result_txt_path = os.path.join(result_category_path,image_file_name) + ".txt"
-    # with open(result_txt_path,"w") as txt_file:
-    #     txt_file.write(str(boundingbox["bb_abs_cxywh"]))
+    if task_args.bounding_box:
+        file_name_without_extension = os.path.splitext(image_file_name)[0]  # 去除扩展名，得到 "image"
+        result_txt_path = os.path.join(result_category_path, file_name_without_extension) + ".txt"
+        with open(result_txt_path, "w") as txt_file:
+            for boundingbox in boundingbox_list:
+                txt_file.write(str(boundingbox["bb_abs_cxywh"]))
+            # print(boundingbox["bb_abs_cxywh"])
+
+
 
     print(f"save to {result_image_path}")

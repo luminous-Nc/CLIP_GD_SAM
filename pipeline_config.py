@@ -3,7 +3,6 @@ task_mappings = {
         "word_list": ['apple', "banana", "bread", "cereal", "chicken", "juice", "lemon", "milk", "orange", "salad"],
         "data_set_path": "./dataset/food_simple/images",
         "output_path": "./dataset/food_simple/results",
-        "binary_mask": False,
         "output_binary_path": "./dataset/food_simple/binary_masks"
     },
     "city": {
@@ -13,7 +12,6 @@ task_mappings = {
                       'terrain', 'sky'],
         "data_set_path": "./dataset/cityscapes/images",
         "output_path": "./dataset/cityscapes/results",
-        "binary_mask": False,
         "output_binary_path": "./dataset/cityscapes/binary_masks"
     },
     "IBL_food": {
@@ -21,7 +19,7 @@ task_mappings = {
                       "breads", "breadsticks", "breakfast bars", "butter", "cakes", "candy", "cheese",
                       "cheese sandwich", "chili",
                       "chips", "condiments and sauces", "cooked cereal", "cookies", "cornbread", "cottage cheese",
-                      "crackers", "cream cheese", "creamers", "creole", "dips", "dumpling", "egg rolls", "eggs",
+                      "crackers", "cream cheese", "creamers", "creole", "dips", "dumplings", "egg rolls", "eggs",
                       "fast food salads", "fish and seafood",
                       "fish patty", "french fries", "french toast", "fruit", "fruit and vegetables", "gelatin",
                       "gnocchi", "gravy", "ice cream", "lasagna",
@@ -32,7 +30,6 @@ task_mappings = {
                       "yogurt"],
         "data_set_path": "./dataset/IBL_food/images",
         "output_path": "./dataset/IBL_food/results",
-        "binary_mask": False,
         "output_binary_path": "./dataset/IBL_food/binary_masks"
     },
     "food": {
@@ -52,7 +49,6 @@ task_mappings = {
                       "yogurt"],
         "data_set_path": "./dataset/food/images",
         "output_path": "./dataset/food/results",
-        "binary_mask": False,
         "output_binary_path": "./dataset/food/binary_masks"
     },
 

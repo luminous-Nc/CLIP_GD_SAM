@@ -43,3 +43,11 @@ def get_word_from_clip(image_PIL, model, preprocess, device, word_list, text_fea
 
     detect_word = results[0]["text_input"]
     return detect_word
+
+
+def get_word_id(word, word_list):
+    try:
+        index = word_list.index(word)
+        return index
+    except ValueError:
+        return -1
