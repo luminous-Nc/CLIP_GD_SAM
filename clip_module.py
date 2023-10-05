@@ -4,6 +4,7 @@ import cv2
 import numpy as np
 import torch
 import clip
+from PIL import Image
 
 
 class CLIPModel:
@@ -74,7 +75,13 @@ class CLIPModel:
             word = boundingbox["word"]
             mask_rgb = image.copy()
             mask_rgb[mask == 0] = [255, 255, 255]  # set background to pure white
-            resend_word = self.get_a_word(image_PIL)
+            x1, y1, x2, y2 = boundingbox["bb_xyxy"]
+            cropped_image = mask_rgb[y1:y2, x1:x2].copy()
+            mask_pil = Image.fromarray(cv2.cvtColor(cropped_image, cv2.COLOR_BGR2RGB))
+            resend_word = self.get_a_word(mask_pil)
+
+            cv2.imshow(f"old {word} new {resend_word}", cropped_image)
+            cv2.waitKey(0)
             if word == resend_word:
                 process_mask_list.append(mask)
                 process_boundingbox_list.append(boundingbox_list[i])
