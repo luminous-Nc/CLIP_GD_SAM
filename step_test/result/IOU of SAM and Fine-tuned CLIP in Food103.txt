@@ -1,0 +1,30 @@
+Category: apple           Average IoU: 80.1624%
+Category: bread           Average IoU: 81.8783%
+Category: cake            Average IoU: 73.3778%
+Category: carrot          Average IoU: 79.4735%
+Category: cheese butter   Average IoU: 71.6340%
+Category: chicken duck    Average IoU: 76.8280%
+Category: chocolate       Average IoU: 70.8556%
+Category: crab            Average IoU: 72.3118%
+Category: fish            Average IoU: 81.1151%
+Category: French beans    Average IoU: 78.1567%
+Category: french fries    Average IoU: 75.5370%
+Category: garlic          Average IoU: 65.2602%
+Category: hanamaki baozi  Average IoU: 59.2290%
+Category: ice cream       Average IoU: 79.5088%
+Category: onion           Average IoU: 70.9857%
+Category: pie             Average IoU: 67.8486%
+Category: pizza           Average IoU: 60.2422%
+Category: pork            Average IoU: 76.6309%
+Category: red beans       Average IoU: 87.0625%
+Category: rice            Average IoU: 75.7501%
+Category: salad           Average IoU: 62.6025%
+Category: seaweed         Average IoU: 73.9198%
+Category: shellfish       Average IoU: 71.0842%
+Category: shrimp          Average IoU: 76.6672%
+Category: soup            Average IoU: 70.9548%
+Category: spring onion    Average IoU: 76.5665%
+Category: steak           Average IoU: 80.5427%
+Category: strawberry      Average IoU: 85.4210%
+Category: wonton dumplings Average IoU: 72.5395%
+Mean mIOU: 0.7428090528279678

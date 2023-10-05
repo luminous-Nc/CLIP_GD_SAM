@@ -1,0 +1,64 @@
+Category: Bacon           Average Accuracy: 0.0000%
+Category: Baked bean      Average Accuracy: 0.0000%
+Category: Beans and rice  Average Accuracy: 34.0659%
+Category: Beef Lamb Veal  Average Accuracy: 35.4730%
+Category: Beverage        Average Accuracy: 0.0000%
+Category: Biscuit         Average Accuracy: 0.0000%
+Category: Bread           Average Accuracy: 8.1566%
+Category: Breadstick      Average Accuracy: 0.0000%
+Category: Breakfast bar   Average Accuracy: 8.5714%
+Category: Butter          Average Accuracy: 0.0000%
+Category: Cake            Average Accuracy: 26.9750%
+Category: Candy           Average Accuracy: 0.0000%
+Category: Cheese          Average Accuracy: 9.0278%
+Category: Cheese Sandwich Average Accuracy: 0.0000%
+Category: Chili           Average Accuracy: 0.0000%
+Category: Chip            Average Accuracy: 0.0000%
+Category: Condiments and Sauce Average Accuracy: 0.0000%
+Category: Cooked cereal   Average Accuracy: 0.0000%
+Category: Cookie          Average Accuracy: 0.0000%
+Category: Cornbread       Average Accuracy: 0.0000%
+Category: Cottage Cheese  Average Accuracy: 6.2500%
+Category: Cracker         Average Accuracy: 0.0000%
+Category: Cream cheese    Average Accuracy: 0.0000%
+Category: Creamer         Average Accuracy: 0.0000%
+Category: Creole          Average Accuracy: 0.0000%
+Category: Dip             Average Accuracy: 0.0000%
+Category: Dumpling        Average Accuracy: 0.0000%
+Category: Egg             Average Accuracy: 0.0000%
+Category: Egg roll        Average Accuracy: 0.0000%
+Category: Fast food salad Average Accuracy: 0.0000%
+Category: Fish and seafood Average Accuracy: 0.0000%
+Category: Fish patty      Average Accuracy: 0.0000%
+Category: French fries    Average Accuracy: 30.0000%
+Category: French toast    Average Accuracy: 78.9474%
+Category: Fruit           Average Accuracy: 0.0000%
+Category: Fruit and Vegetable Average Accuracy: 0.0000%
+Category: Gelatin         Average Accuracy: 0.0000%
+Category: Gnocchi         Average Accuracy: 80.0000%
+Category: Gravy           Average Accuracy: 0.0000%
+Category: Ice cream       Average Accuracy: 10.4265%
+Category: Lasagna         Average Accuracy: 42.1053%
+Category: Luncheon Meat   Average Accuracy: 0.0000%
+Category: Mayonnaise      Average Accuracy: 0.0000%
+Category: Mexican dishes  Average Accuracy: 0.0000%
+Category: Olive           Average Accuracy: 0.0000%
+Category: Pie             Average Accuracy: 41.0180%
+Category: Pretzel         Average Accuracy: 0.0000%
+Category: Rolls Bagels bun Average Accuracy: 1.5625%
+Category: Sandwich        Average Accuracy: 15.5556%
+Category: Shepherd Pie    Average Accuracy: 5.8824%
+Category: Sour cream      Average Accuracy: 0.0000%
+Category: Spaghetti sauce Average Accuracy: 0.0000%
+Category: Sugar           Average Accuracy: 0.0000%
+Category: Sweet bread     Average Accuracy: 0.0000%
+Category: Sweet Bread Pastry Muffin Average Accuracy: 0.0000%
+Category: Syrups          Average Accuracy: 0.0000%
+Category: Syrups Lcing    Average Accuracy: 0.0000%
+Category: Tortilla Taco Shell Average Accuracy: 0.0000%
+Category: Trail and Snack Mix Average Accuracy: 0.0000%
+Category: Various Salad   Average Accuracy: 0.0000%
+Category: Vegetable       Average Accuracy: 0.1471%
+Category: Waffle          Average Accuracy: 0.0000%
+Category: Yogurt          Average Accuracy: 16.6667%
+Mean mAccuracy: 7.15604669828886

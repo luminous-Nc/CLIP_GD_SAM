@@ -2,7 +2,7 @@ import os
 
 import numpy as np
 
-from clip_component import get_clip_model, get_word_from_clip
+from clip_module import get_clip_model, get_word_from_clip
 from PIL import Image
 
 if __name__ == "__main__":
@@ -21,7 +21,8 @@ if __name__ == "__main__":
                  "yogurt"]
 
     ground_folder = ".\\..\\dataset\\IBL_food\\images"
-    result_folder = ".\\..\\dataset\\IBL_food\\results"
+    # result_folder = ".\\..\\dataset\\IBL_food\\results"
+    result_folder = ".\\..\\dataset\\IBL_food\\results_clip"
 
     categories = os.listdir(ground_folder)
     accuracy_per_category = []
@@ -52,4 +53,4 @@ if __name__ == "__main__":
         print("Category: {:<15} Average Accuracy: {:.4f}%".format(category, category_average_iou))
 
     mean_accuracy = np.mean(accuracy_per_category)
-    print(f"Mean mIOU: {mean_accuracy}")
+    print(f"Mean mAccuracy: {mean_accuracy}")

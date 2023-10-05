@@ -2,7 +2,9 @@
 venv
 dataset
 build
+BBSasInput
 sam_vit_h_4b8939.pth
+fine_tune_CLIP.pt
 __pycache__
 coca_result.zip
 /validation/cityscape/

@@ -2,8 +2,10 @@ import os
 
 import cv2
 import numpy as np
+import pandas as pd
+import openpyxl
 
-from clip_component import get_clip_model, get_word_from_clip
+from clip_module import get_clip_model, get_word_from_clip
 from PIL import Image
 
 word_list = ["background", "candy", "egg tart", "french fries", "chocolate", "biscuit",
@@ -32,8 +34,8 @@ word_list = ["background", "candy", "egg tart", "french fries", "chocolate", "bi
 def calculate_iou(mask1, mask2):
     mask1 = mask1.astype(bool)
     mask2 = mask2.astype(bool)
-    intersection = np.logical_and(mask1, np.logical_not(mask2))  # Black and white are reversed in ground and result
-    union = np.logical_or(mask1, np.logical_not(mask2))
+    intersection = np.logical_and(mask1, mask2)  # Black and white are reversed in ground and result
+    union = np.logical_or(mask1, mask2)
     iou = np.sum(intersection) / np.sum(union)
     return iou
 
@@ -71,39 +73,74 @@ def display_pixels_by_category(label_ids_path, category_id, category):
     cv2.destroyAllWindows()
 
 
+def get_ground_image_path(image_info, result_folder):
+    image_name = os.path.splitext(os.path.basename(image_info['address']))[0]  # 提取图像名称
+    label_name_file = image_name + f"_{image_info['category']}" + ".png"
+    label_ids_file_path = os.path.join(result_folder, label_name_file)
+    return label_ids_file_path
+
+
 if __name__ == "__main__":
 
     ground_folder = ".\\..\\dataset\\food_103\\ground_truths"
     result_folder = ".\\..\\dataset\\food_103\\pure_masks"
+    # result_folder = ".\\..\\dataset\\food_103\\pure_masks_clip"
 
     categories = os.listdir(result_folder)
     ious_per_category = []
+    data = pd.DataFrame(columns=['category', 'IoU'])
+    category_list = []
+    IOU_list = []
+    with open('result/sam_before_fine_tune_clip.txt', "w") as txt_file:
+        for category in categories:
+            category_list.append(category)
+            input_line = f"category: {category}\n"
+            txt_file.write(input_line)
+            ious = []
+            category_result_folder = os.path.join(result_folder, category)
+            image_info_list = collect_image_info(category_result_folder, category)
+            if len(image_info_list) == 0:
+                print("Category: {:<15} Average IoU: {:<15}".format(category, '0 CLIP dont recognize this category'))
+                # ious_per_category.append(100)
+                IOU_list.append("CLIP don't recognize")
+                continue
+            else:
+                for image_info in image_info_list:
+                    corresponding_label_ids_file = find_corresponding_label_ids_file(image_info, ground_folder)
+                    category_id = image_info['category_id']
+                    label_ids = cv2.imread(corresponding_label_ids_file, cv2.IMREAD_UNCHANGED)
 
-    for category in categories:
-        ious = []
-        category_result_folder = os.path.join(result_folder, category)
-        image_info_list = collect_image_info(category_result_folder, category)
-        if len(image_info_list) == 0:
-            print("Category: {:<15} Average IoU: {:<15}".format(category, '0 CLIP dont recognize this category'))
-            ious_per_category.append(0)
-            continue
-        else:
-            for image_info in image_info_list:
-                corresponding_label_ids_file = find_corresponding_label_ids_file(image_info, ground_folder)
-                category_id = image_info['category_id']
-                label_ids = cv2.imread(corresponding_label_ids_file, cv2.IMREAD_UNCHANGED)
+                    # display_pixels_by_category(corresponding_label_ids_file, category_id, category)
 
-                # display_pixels_by_category(corresponding_label_ids_file, category_id, category)
+                    ground_pixels = (label_ids == category_id)
+                    ground_mask = np.zeros_like(label_ids)
+                    ground_mask[ground_pixels] = category_id
 
-                ground_pixels = (label_ids != category_id)
-                ground_mask = np.zeros_like(label_ids)
-                ground_mask[ground_pixels] = 255
+                    # ground_image_path = get_ground_image_path(image_info,category_result_folder)
+                    # print(ground_image_path)
+                    # cv2.imwrite(ground_image_path, ground_mask)
 
-                result_mask = cv2.imread(image_info['address'], cv2.IMREAD_GRAYSCALE)
-                iou = calculate_iou(ground_mask, result_mask)
-                ious.append(iou)
-            category_average_iou = np.mean(ious)
-            ious_per_category.append(category_average_iou)
-            print("Category: {:<15} Average IoU: {:.4f}%".format(category, category_average_iou * 100))
-    mean_iou = np.mean(ious_per_category)
-    print(f"Mean mIOU: {mean_iou}")
+                    result_mask = cv2.imread(image_info['address'], cv2.IMREAD_GRAYSCALE)
+
+                    iou = calculate_iou(ground_mask, result_mask)
+                    file_name = image_info["address"].split("\\")[-1]
+                    file_category = image_info["category"]
+                    input_line = f" name: {file_name} category:{file_category}  iou:{iou} \n"
+                    txt_file.write(input_line)
+                    ious.append(iou)
+                category_average_iou = np.mean(ious)
+                ious_per_category.append(category_average_iou)
+                IOU_list.append(category_average_iou)
+                print("Category: {:<15} Average IoU: {:.4f}%".format(category, category_average_iou * 100))
+                input_line = f"Average IOU of {category}: {category_average_iou}\n"
+                new_data = pd.DataFrame({'category': [category], 'IoU': [category_average_iou]})
+                txt_file.write(input_line)
+        df = pd.DataFrame({'category': category_list, "IoU": IOU_list})
+        df.to_excel("haha.xlsx")
+        mean_iou = np.mean(ious_per_category)
+        print(f"Mean mIOU: {mean_iou}")
+        print(f"Total {len(ious_per_category)} categories")
+
+        excel_file = 'iou_results.xlsx'
+        data.to_excel(excel_file, index=False)
+        print(f"Results saved to {excel_file}")
